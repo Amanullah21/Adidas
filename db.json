@@ -1,0 +1,188 @@
+{
+  "todos": [
+    {
+      "title": "ptweb3 is awesome 1",
+      "userID": "ptweb3",
+      "isCompleted": true,
+      "id": 1
+    },
+    {
+      "title": "new task test",
+      "userID": "ptweb3",
+      "isCompleted": true,
+      "id": 2
+    },
+    {
+      "title": "new todo item by ptweb3-2",
+      "userID": "ptweb3-2",
+      "isCompleted": false,
+      "id": 3
+    },
+    {
+      "title": "Aman",
+      "userID": "ptweb3",
+      "isCompleted": true,
+      "id": 5
+    },
+    {
+      "title": "Aman",
+      "userID": "",
+      "isCompleted": true,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "email": "amanullah_pw2_213@masai.school",
+      "password": "Amanullah",
+      "agree": true,
+      "id": 1
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/a439d6cb7ebd47f0a281ad5100ee4296_9366/juventus-zx-2k-boost-2.0-shoes.jpg",
+      "price": "9000",
+      "gen": "male",
+      "cate": "shoes",
+      "title": "Formal Shoes"
+    },
+    {
+      "id": "2",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bed08740b59418eb8a0ad940138c943_9366/a.b.-gazelle-indoor-shoes.jpg",
+      "price": "2000",
+      "title": "Gaale Indoor Shoes",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "3",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/2dd017b0172642099181adb800b7937e_9366/running-uniflow-shoes.jpg",
+      "price": "2000",
+      "title": "Running Shoes",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "4",
+      "url": "https://m.media-amazon.com/images/I/61hMQOHmEIL._UY695_.jpg",
+      "price": "2000",
+      "title": "Men's Bouncer-01",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "5",
+      "url": "https://m.media-amazon.com/images/I/71sSM7Y1gVL._UX695_.jpg",
+      "price": "1000$",
+      "title": "Adidas Men's CRI Rise V2 Shoes",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "6",
+      "url": "https://m.media-amazon.com/images/I/81TUPdBNMYL._UX695_.jpg",
+      "price": "2000",
+      "title": "Adidas Men's Beamers M Running Shoe",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "7",
+      "url": "https://m.media-amazon.com/images/I/71zEx-k2FUL._UY695_.jpg",
+      "price": "5000",
+      "title": "Centrino Men Formal Shoe",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "8",
+      "url": "https://m.media-amazon.com/images/I/51OVgAIoKoL._UX695_.jpg",
+      "price": "2000",
+      "title": "T-Rock Men's Sports Shoes",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "9",
+      "url": "https://m.media-amazon.com/images/I/51ikE3xxw3L._UX695_.jpg",
+      "price": "4000",
+      "title": "Road Runner",
+      "gen": "male",
+      "cate": "shoes"
+    },
+    {
+      "id": "10",
+      "url": "https://m.media-amazon.com/images/I/71EPo488voL._AC_UL320_.jpg",
+      "price": "4000",
+      "title": "Bourge Women's Micam-z14 Running Shoes",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "11",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "12",
+      "url": "https://m.media-amazon.com/images/I/61w9+swPHpL._UY695_.jpg",
+      "price": "4000",
+      "title": "Women's Matty BLK Walking Shoes",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "13",
+      "url": "https://m.media-amazon.com/images/I/61JLChiC6uL._UX695_.jpg",
+      "price": "4000",
+      "title": "KEESKY Women's Leather Casual",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "14",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "15",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "1",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "10",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    },
+    {
+      "id": "10",
+      "url": "",
+      "price": "4000",
+      "title": "",
+      "gen": "female",
+      "cate": "shoes"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+.SignUp_cont{
+    height: 500px;
+    width: 100%;
+}
+.btn {
+    float: right;
+    font-size: 30px;
+    margin-top: -40px;
+    margin-right: -15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(19, 18, 18);
+  }
+  .btn:hover {
+    background-color: rgb(230, 68, 68);
+    color: black;
+  }
+  
+  .modal_background {
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: none;
+    padding-top: 20px;
+    border: 1px solid rgb(41, 40, 40);
+    text-align: left;
+    padding: 20px;
+  }
+
+.input{
+      width: 90%;
+      margin: 10px;
+      height: 50px;
+  }
+
+  .modal_background label{
+      padding-left: 20px;
+  }
+  .modal_background:hover {
+    background-color: rgb(19, 18, 18);
+    color: white;
+  }
+      
+.facebook{
+    width: 50%;
+    height: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+.facebook:hover{
+    border: 1px white solid;
+    color: white;
+}

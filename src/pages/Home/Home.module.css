@@ -1,0 +1,162 @@
+.Home {
+  margin-top: 100px;
+}
+
+.top_section {
+  background-image: url("../../Image/HomeImg.webp");
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.popular_con {
+  height: 250px;
+  width: 100%;
+  padding-top: 50px;
+}
+.popular_con button {
+  height: 50px;
+  margin: 10px;
+  width: max-content;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.popular_con button:hover {
+  background-color: black;
+  color: white;
+}
+
+.who_are_you {
+  height: 500px;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+}
+
+.who_are_div {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.who_are_div div {
+  height: 400px;
+  width: 32%;
+  margin: 10px;
+}
+
+.who_are_div_man {
+  background-image: url("../../Image/MenHome.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+.who_are_div_women {
+  background-image: url("../../Image/WomenHome.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+.who_are_div_kids {
+  background-image: url("../../Image/KidsHome.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+
+.Slider_con{
+  width: 100%;
+  height: 650px;
+  
+}
+
+.Slider_con h1{
+  margin-left: 20px;
+}
+.style_card{
+  width: 30%;
+  text-align: left;
+  cursor: pointer;
+}
+.style_card img{
+  margin: 0 20px;
+  height: 500px;
+}
+.style_card h5{
+  padding-left: 30px;
+  line-height: 0.8;
+}
+.style_card span{
+  line-height: 0.4;
+  padding-left: 30px;
+  margin-top: -50px;
+  padding-top: -20PX;
+}
+
+
+
+
+.Slider_con1{
+  background-color: brown;
+  width: 100%;
+  
+}
+
+.Slider_con1 h1{
+  margin-left: 20px;
+  text-align: left;
+}
+.Slider_con1 a{
+  padding-top: 30px;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.flex{
+  display: flex;
+  gap:72%;
+}
+.new_card{
+  background-color: rgb(151, 235, 131);
+  /* width: 30%; */
+  text-align: left;
+  cursor: pointer;
+}
+.new_card img{
+  margin: 0 20px;
+  height: 200px;
+}
+.new_card h5{
+  padding-left: 30px;
+  line-height: 0.8;
+}
+.new_card span{
+  line-height: 0.4;
+  padding-left: 30px;
+  margin-top: -50px;
+  padding-top: -20PX;
+}
