@@ -1,0 +1,96 @@
+.Men_container {
+  width: 100%;
+}
+.Men_top {
+  height: 650px;
+  width: 100%;
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enIN/Images/sustainability-ss22-rfto-tease-HP-GLP-mh-Dominic-d_tcm209-865889.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.together {
+  height: 500px;
+  padding-top: 200px;
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  /* border: 1px solid red; */
+}
+.together h2 {
+  font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+.button_Home{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid black;
+  }
+
+.video_section{
+    height: 703px;
+    width: 100%;
+}
+.video_section video{
+    height: 100%;
+}
+
+.MenCard{
+    height: 400px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.MenCard div{
+    height:300px ;
+    width: 23%;
+    margin: 1%;
+    cursor: pointer;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 250px;
+}
+.men_img1{
+    background-image: url("https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bed08740b59418eb8a0ad940138c943_9366/a.b.-gazelle-indoor-shoes.jpg")
+}
+.MenCard div h4{
+    color: black;
+}
+.men_img2{
+    background-image: url("https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/93c9faaf6c7f40259550ae6f00df625a_9366/Blondey_Coach_Jacket_Silver_GS9265_01_laydown.jpg");
+}
+.men_img3{
+    background-image: url("https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/313d772351f14d289074ae2100a85d5d_9366/m-mel-hd.jpg");
+}
+.men_img4{
+    background-image: url("https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/22e21c736b9042cda230adaa00a35bf0_9366/small-logo-single-jersey-tee.jpg");
+}
+
+.menSlider{
+    height: 380px;
+    text-align: left;
+}
+.new_card{
+    color: black;
+    cursor: pointer;
+    padding-left: 20px;
+   margin: 10 !important;
+}
+.best_text{
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.clothing_text {
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 1.5;
+}

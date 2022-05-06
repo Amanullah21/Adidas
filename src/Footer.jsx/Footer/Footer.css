@@ -1,0 +1,30 @@
+.heading-foot{
+    font-weight: 700;
+    font-size: 18px !important;
+    margin-bottom: 9px !important;
+    cursor: text !important;
+
+}
+
+.heading-foot:hover{
+   text-decoration: none !important;
+
+}
+.footer-top{
+    display: flex;
+    
+}
+.footer-top li{
+    margin-top: 2px;
+    list-style: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+.margin-gap-foot{
+    margin-top: 10px;
+}
+
+.footer-top li:hover{
+    text-decoration: underline 0.2px black;
+    
+}

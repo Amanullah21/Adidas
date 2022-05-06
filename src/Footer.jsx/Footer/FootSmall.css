@@ -1,0 +1,13 @@
+.small-bot {
+  display: flex;
+  /* gap: 10%; */
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.small-bot li {
+  list-style: none;
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+}

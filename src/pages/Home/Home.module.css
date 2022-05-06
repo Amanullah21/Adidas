@@ -1,6 +1,6 @@
-.Home {
+/* .Home {
   margin-top: 100px;
-}
+} */
 
 .top_section {
   background-image: url("../../Image/HomeImg.webp");
@@ -9,6 +9,31 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.together {
+  height: 500px;
+  padding-top: 200px;
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+  /* border: 1px solid red; */
+}
+.together h2 {
+  font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+
+.button_Home{
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  border: 1px solid black;
 }
 
 
@@ -119,7 +144,6 @@
 
 
 .Slider_con1{
-  background-color: brown;
   width: 100%;
   
 }
@@ -141,7 +165,6 @@
   gap:72%;
 }
 .new_card{
-  background-color: rgb(151, 235, 131);
   /* width: 30%; */
   text-align: left;
   cursor: pointer;

@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "../../slider.css";
 import { Link } from "react-router-dom";
-import Slider1 from "../Slider1";
 
 const images = [
   {
@@ -13,14 +12,14 @@ const images = [
     title: "Mid Cut Crew",
   },
   {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
+    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/1c2febd0cacc4d6aa958ab8a00ff0a30_9366/adicolor-classics-primeblue-sst-track-pants.jpg",
     price: "2000",
-    title: "Mid Cut Crew",
+    title: "Taruser Cut Crew",
   },
   {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
+    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/d4952e174de7465482d9ac46010c4aab_9366/adicolor-classics-3-stripes-tee.jpg",
     price: "2000",
-    title: "Mid Cut Crew",
+    title: "Mid Cut Crew Tshirt",
   },
   {
     url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
@@ -85,7 +84,15 @@ const Home = () => {
 
   return (
     <div className={styled.Home}>
-      <div className={styled.top_section}></div>
+      <div className={styled.top_section}>
+      <div className={styled.together}>
+            <h2>
+              TOGETHER, IMPOSSIBLE IS <br /> NOTHING
+            </h2>
+            <p>Find out how you can help end plastic waste, starting May 9.</p>
+            <button className={styled.button_Home}>Learn More </button>
+          </div>
+      </div>
 
       <div className={styled.popular_con}>
         <h1>POPULAR RIGHT NOW</h1>
@@ -143,6 +150,8 @@ const Home = () => {
             </div>
           ))}
         </Slider>
+
+      
       </div>
     </div>
   );

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+.nav-adidas {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-adidas li {
+  list-style: none;
+}
+.search-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link-nav input {
+  /* outline: 0.2cm solid black; */
+  background-color: rgb(233, 236, 239);
+  color: rgb(124, 126, 127);
+  border: none;
+  outline: none;
+}
+
+.navigation-bar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin: 0 3%;
+}
+.navigation-bar-img{
+  /* height: 200px; */
+  width: 300px;
+  padding-top: 30px;
+}
+.nav-adidas a {
+  text-decoration: none;
+  color: black;
+}
+
+/* animation */
+
+.animation-nav {
+  width: 0;
+  background-color: black;
+  height: 2px;
+  transition: ease-in-out 0.3s;
+  margin-top: 7px;
+}
+
+.links-nav:hover > .animation-nav {
+  width: 100%;
+}
+
+.links-nav-upper-wrapper {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: rgb(60, 59, 59);
+  font-weight: 400;
+  margin-top: 7px;
+  font-size: small;
+}
+.links-nav-upper-wrapper a {
+  text-decoration: none;
+  color: rgb(60, 59, 59);
+}
+.links-nav-upper-wrapper a:hover {
+  text-decoration: none;
+  color: rgb(60, 59, 59);
+}
+
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.image-adidas {
+  width: 20%;
+}
+
+.icon-link-nav {
+  display: flex;
+  list-style: none;
+  color: black;
+  gap: 20px;
+}
+
+.icon-link a {
+  color: black;
+  font-size: 20px;
+}
+.icon-link a:hover {
+  color: black;
+}
+
+.links-nav-bottom-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-nav {
+  outline: 1px solid rgb(233, 236, 239);
+  transition: ease-in-out 0.5s;
+  display: flex;
+  align-items: stretch;
+}
+.search-nav:hover {
+  outline: 1px solid black;
+}
+
+.hidden-nav-drop-men {
+  width: max-content;
+  display: none;
+  height: max-content;
+
+  position: absolute;
+  background-color: whitesmoke;
+  left: -500%;
+  z-index: 999999;
+}
+
+.links-nav {
+  position: relative;
+}
+.hidden-heading-nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+.links-nav.men:hover > .hidden-nav-drop-men {
+  display: block;
+}
+
+.hidden-left-flex {
+  border-left: 1px gray solid;
+}
+
+.links-nav a,
+.links-nav h5 {
+  font-size: 15px;
+}

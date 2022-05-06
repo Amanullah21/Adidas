@@ -1,0 +1,17 @@
+.toggle-nav-icon div {
+  height: 2px;
+  width: 27px;
+  background-color: black;
+  display: block;
+  margin: 4px ;
+}
+
+.new-nav-responsive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%
+}
+.size-small {
+  width: 40px;
+}

@@ -37,6 +37,12 @@
       "password": "Amanullah",
       "agree": true,
       "id": 1
+    },
+    {
+      "email": "amanullah_pw2_213@masai.school",
+      "password": "Amanullah",
+      "agree": true,
+      "id": 2
     }
   ],
   "product": [

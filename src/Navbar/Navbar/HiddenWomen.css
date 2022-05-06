@@ -1,0 +1,13 @@
+.hidden-nav-drop-women {
+  width: max-content;
+  display: none;
+  height: max-content;
+
+  position: absolute;
+  background-color: whitesmoke;
+  left: -700%;
+  z-index: 999999;
+}
+.links-nav.women:hover > .hidden-nav-drop-women {
+  display: block;
+}

@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-}.nav-margin{
-  margin-top: 100px;
 }
 button{
   cursor: pointer;
+}
+.left{
+  text-align: left;
 }
 

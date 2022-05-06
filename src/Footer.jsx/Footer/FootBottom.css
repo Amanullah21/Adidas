@@ -1,0 +1,16 @@
+.foot-bottom {
+  background-color: rgb(54, 55, 56);
+  color: white;
+
+  padding-top: 20px;
+}
+.foot-bottom .pointer {
+  padding-left: 90px;
+  color: #c8cbcc;
+  font-size: 12px;
+}
+
+.copyright {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
