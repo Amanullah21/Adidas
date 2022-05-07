@@ -7,19 +7,29 @@ import { Link } from "react-router-dom";
 
 const images = [
   {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
+    url: "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/a439d6cb7ebd47f0a281ad5100ee4296_9366/juventus-zx-2k-boost-2.0-shoes.jpg",
     price: "2000",
-    title: "Mid Cut Crew",
+    title: "Shoes",
   },
   {
     url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/1c2febd0cacc4d6aa958ab8a00ff0a30_9366/adicolor-classics-primeblue-sst-track-pants.jpg",
     price: "2000",
-    title: "Taruser Cut Crew",
+    title: "Taruser",
   },
   {
     url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/d4952e174de7465482d9ac46010c4aab_9366/adicolor-classics-3-stripes-tee.jpg",
     price: "2000",
-    title: "Mid Cut Crew Tshirt",
+    title: "Tshirt",
+  },
+  {
+    url: "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bed08740b59418eb8a0ad940138c943_9366/a.b.-gazelle-indoor-shoes.jpg",
+    price: "2000",
+    title: "Shoes",
+  },
+  {
+    url: "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/2dd017b0172642099181adb800b7937e_9366/running-uniflow-shoes.jpg",
+    price: "2000",
+    title: "Rununig Show",
   },
   {
     url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
@@ -27,24 +37,14 @@ const images = [
     title: "Mid Cut Crew",
   },
   {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
+    url: "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/65642cf2bb6a4fef811aad520127e41f_9366/cooler-long-sleeve-sweatshirt.jpg",
     price: "2000",
     title: "Mid Cut Crew",
   },
   {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
+    url: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a2adc8816a34eafb149abb500faee05_9366/Tokyo_Run_Jacket_White_GD5028_21_model.jpg",
     price: "2000",
-    title: "Mid Cut Crew",
-  },
-  {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
-    price: "2000",
-    title: "Mid Cut Crew",
-  },
-  {
-    url: "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/f7700e507b2640b1927bab3a0104db80_9366/mid-cut-crew-socks-3-pairs.jpg",
-    price: "2000",
-    title: "Mid Cut Crew",
+    title: "Tokyo jacket",
   },
 ];
 
@@ -85,13 +85,13 @@ const Home = () => {
   return (
     <div className={styled.Home}>
       <div className={styled.top_section}>
-      <div className={styled.together}>
-            <h2>
-              TOGETHER, IMPOSSIBLE IS <br /> NOTHING
-            </h2>
-            <p>Find out how you can help end plastic waste, starting May 9.</p>
-            <button className={styled.button_Home}>Learn More </button>
-          </div>
+        <div className={styled.together}>
+          <h2>
+            TOGETHER, IMPOSSIBLE IS <br /> NOTHING
+          </h2>
+          <p>Find out how you can help end plastic waste, starting May 9.</p>
+          <button className={styled.button_Home}>Learn More </button>
+        </div>
       </div>
 
       <div className={styled.popular_con}>
@@ -106,7 +106,9 @@ const Home = () => {
         <h1>WHO ARE YOU SHOPPING FOR?</h1>
         <div className={styled.who_are_div}>
           <div className={styled.who_are_div_man} onClick={menhome}>
-            Men
+            <Link to="/men" style={{ color: "white" }}>
+              Men
+            </Link>
           </div>
           <div className={styled.who_are_div_women} onClick={womenhome}>
             Women
@@ -150,8 +152,6 @@ const Home = () => {
             </div>
           ))}
         </Slider>
-
-      
       </div>
     </div>
   );

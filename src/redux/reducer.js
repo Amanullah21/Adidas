@@ -1,24 +1,56 @@
-import { FETCHED_TODO_ITEMS, LOGIN, LOGOUT } from "./actions";
+import { ADD_TO_BAG, FETCHED_TODO_ITEMS, ISCLOSE, ISOPEN, LOGIN, LOGOUT, REMOVE_TO_BAG, SAVED_BAG } from "./actions";
 
 const initialState = {
-  todos: [],
+  product: [],
   userDetails: {
     isLoggedIn: false,
     userEmail: "",
   },
-  cart: [],
+  cartProducts: [],
   wishList: [],
+  isOpen:false
+
 };
+
+
+
 
 export const todoReducer = (store = initialState, action) => {
   switch (action.type) {
     case FETCHED_TODO_ITEMS:
       return {
         ...store,
-        todos: action.payload.filter(
+        product: action.payload.filter(
           (task) => task.userID === store.userDetails.userEmail
         ),
       };
+      
+      case ADD_TO_BAG:
+      return {
+        ...store,
+        cartProducts: [...store.cartProducts, action.payload],
+      };
+      case REMOVE_TO_BAG:
+      return {
+        ...store,
+        cartProducts: store.cartProducts.filter((id) => id !== action.payload)
+      };
+    case SAVED_BAG:
+      return {
+        ...store,
+        cartProducts: action.payload,
+      };
+      case ISOPEN:
+      return {
+        ...store,
+        isOpen: true,
+      };
+      case ISCLOSE:
+      return {
+        ...store,
+        isOpen: false,
+      };
+
     case LOGIN:
       return {
         ...store,

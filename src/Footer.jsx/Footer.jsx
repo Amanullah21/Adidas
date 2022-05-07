@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FootLast from "../Order/Purchase/FootLast/FootLast";
 import styled from "./Footer.module.css";
 
 const Footer = () => {
@@ -58,7 +59,9 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className={styled.footer_bottom}></div>
+      <div>
+      <FootLast />
+      </div>
     </div>
   );
 };

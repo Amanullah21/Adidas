@@ -1,0 +1,33 @@
+.payment_container {
+  background-color: rgb(25, 26, 25);
+  margin: 10px 10%;
+  /* width: 70%; */
+  /* height: 700px; */
+  text-align: left;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.payment_mode {
+  width: 60%;
+  padding-left: 20px;
+  margin: 20px;
+  border: 2px solid white;
+}
+.payment_mode:hover{
+  background-color: white;
+  color: black;
+}
+
+.summary{
+    width: 30%;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 2px solid white;
+}
+.summary:hover{
+  background-color: white;
+  color: black;
+}

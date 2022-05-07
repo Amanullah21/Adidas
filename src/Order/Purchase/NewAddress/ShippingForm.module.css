@@ -1,0 +1,56 @@
+.form_flex {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 60%;
+  margin-left: 20%;
+  flex-shrink: 3;
+  /* font-family: "adineue PRO Cyr Light"; */
+}
+.heading {
+  margin-top: 30px;
+  font-family: "adineue PRO Cyr Bold";
+  margin-left: 100px;
+}
+.form_flex input {
+  padding-left: 10px;
+}
+.input_name {
+  padding: 0.8rem 0;
+  width: 325px;
+}
+.left_right {
+  display: flex;
+  gap: 25px;
+  margin-left: 138px;
+}
+.input_address {
+  padding: 0.8rem;
+  width: 675px;
+  justify-content: left;
+  text-align: left;
+}
+.input_address + div {
+  color: lightgrey;
+  font-size: medium;
+  padding-left: 10px;
+}
+.button {
+  padding: 5px 25px;
+  color: black;
+  border: 0;
+  margin-left: 15%;
+  width: 675px;
+}
+
+.div {
+  justify-self: stretch;
+}
+.input_select {
+  padding-left: 6px;
+}
+.span {
+  /* margin-left: 100px; */
+  padding-top: 20px;
+}

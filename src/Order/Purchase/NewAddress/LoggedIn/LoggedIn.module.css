@@ -1,0 +1,22 @@
+.div_flex {
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 20%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  /* gap: 5px; */
+  padding-bottom: 20px;
+  width: 940px;
+}
+.heading {
+  font-size: x-large;
+}
+.heading_two {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}

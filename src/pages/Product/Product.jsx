@@ -4,61 +4,200 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import styled from "./Product.module.css";
 import Filter from "./Filter";
+import { addingToBag } from "../../redux/actions";
+import { useDispatch } from "react-redux";
+
 const Product = () => {
   const [product, setProduct] = useState([]);
-  const url = "http://localhost:8080/product";
+  let url = "http://localhost:8080/product";
   const getTodo = () => {
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
+  const dispatch = useDispatch();
 
   useEffect(() => getTodo(), []);
+
   const productCard = () => {
     console.log("Product card of product page");
   };
+
+  const addtobag = (item) => {
+    fetch("http://localhost:8080/cartProducts", {
+      method: "POST",
+      body: JSON.stringify(item),
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
+      .then((response) => response.json())
+      .then((res) => dispatch(addingToBag(res)));
+  };
+
+  const sortedDataPriceLow = () => {
+    let url = "http://localhost:8080/product?_sort=price&_order=asc";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+  const sortedDataNewest = () => {
+    let url = "http://localhost:8080/product?_sort=date&_order=asc";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+  const sortedDataPriceHigh = () => {
+    let url = "http://localhost:8080/product?_sort=price&_order=desc";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+
+  const shoescat = () => {
+    console.log("check");
+    let url = "http://localhost:8080/product?cate=shoes";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+
+  const clothcat = () => {
+    let url = "http://localhost:8080/product?cate=cloth";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+  const maleFilter = () => {
+    let url = "http://localhost:8080/product?gen=male";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+  const femaleFilter = () => {
+    let url = "http://localhost:8080/product?gen=female";
+    fetch(url)
+      .then((res) => res.json())
+      .then((res) => setProduct(res))
+      .catch((error) => console.log(error));
+  };
+
   const [filterOpen, setFilterOpen] = useState(false);
+
   return (
     <div className="nav-margin">
       <div className={styled.product_filter}>
-        <h2>All Product</h2>
-        <button onClick={() => setFilterOpen(true)}>
+        <h2 style={{
+          paddingLeft:"20px"
+        }}>Product</h2>
+        <button className={styled.filter} onClick={() => setFilterOpen(true)}>
           <span>Fliter & Sort</span>
-          <img src="" alt="lcon" />
+          <img
+            style={{
+              height: "30px",
+            }}
+            src="https://cdn.icon-icons.com/icons2/1993/PNG/512/filter_filters_funnel_list_navigation_sort_sorting_icon_123212.png"
+            alt="lcon"
+          />
         </button>
 
         <Modal className={styled.filter_modal_background} isOpen={filterOpen}>
-        <div className={styled.Modal_div}>
-           
-           <h4> Filter & Sort</h4>
-           <Link to="/"><span>Clear All</span></Link>
-           <button
-             onClick={() => setFilterOpen(false)}
-             className={styled.cut_btn}
-           >
-             X
-           </button>
-         </div>
-         <hr />
-          <Filter/>
+          <div className={styled.Modal_div}>
+            <h4> Filter & Sort</h4>
+            <Link to="/">
+              <span>Clear All</span>
+            </Link>
+            <button
+              onClick={() => setFilterOpen(false)}
+              className={styled.cut_btn}
+            >
+              X
+            </button>
+          </div>
+          <hr />
+          <div className={styled.xyz}>
+            <div class="dropdown">
+              <h5 class="dropbtn">Sort by :</h5>
+              <div class="dropdown-content">
+                <p onClick={sortedDataPriceLow}>Price (low to high)</p>
+                <p onClick={sortedDataNewest}>Newest Product</p>
+                <p onClick={sortedDataPriceHigh}>Price (high To low)</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <h5 class="dropbtn">DIVISION</h5>
+              <div className={styled.first}>
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="shoes"
+                  onChange={shoescat}
+                />
+                <label htmlFor="Straighteners">Shoes</label>
+              </div>
+              <div className={styled.first}>
+                <input
+                  type="checkbox"
+                  name="category"
+                  value="cloth"
+                  onChange={clothcat}
+                />
+                <label htmlFor="Straighteners">Clothing</label>
+              </div>
+              <div className={styled.first}>
+                <input type="checkbox" name="category" value="accessories" />
+                <label htmlFor="Straighteners">Accessories</label>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <h5 class="dropbtn">Gender</h5>
+              <div className={styled.first}>
+                <input
+                  type="checkbox"
+                  name="gender"
+                  value="male"
+                  onChange={maleFilter}
+                />
+                <label htmlFor="Straighteners">Male</label>
+              </div>
+              <div className={styled.first}>
+                <input
+                  type="checkbox"
+                  name="gender"
+                  value="female"
+                  onClick={femaleFilter}
+                />
+                <label htmlFor="Straighteners">Female</label>
+              </div>
+              <div className={styled.first}>
+                <input type="checkbox" name="gender" value="kids" />
+                <label htmlFor="Straighteners">Kids</label>
+              </div>
+            </div>
+          </div>
         </Modal>
       </div>
-
-      <hr />
-      <hr />
-      <hr />
-
       <div className={styled.product_container}>
         {product.map((ele, index) => (
-          <Link to={`/product/${index + 1}`}>
+          <div className={styled.productcard_container}>
             <div className={styled.product_card} onClick={productCard}>
-              <img src={ele.url} alt={ele.title} />
+              <Link to={`/product/${index + 1}`}>
+                <img src={ele.url} alt={ele.title} />
+              </Link>
               <h5>{ele.title}</h5>
-              <p>Price{ele.price}</p>
-              <button>+</button>
+              <span>Gander : {ele.gen}/</span>
+              <span>{ele.cate}</span>
+              <p>Price : $ {ele.price} </p>
             </div>
-          </Link>
+
+            <button onClick={() => addtobag(ele)}>Add to Cart</button>
+          </div>
         ))}
       </div>
     </div>

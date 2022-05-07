@@ -1,0 +1,28 @@
+
+.img_container{
+     width: 60%;
+     background-color: white;
+     color: black;
+     border: 2px solid black;
+     margin-left: 20%;
+    
+}
+.img_container:hover{
+    background-color: black;
+    color: white;
+}
+.delivery{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    width: 60%;
+    text-align: left;
+    padding: 20px;
+    margin: 1px 20%;
+    line-height: 0.9;
+   
+}
+.delivery:hover{
+    background-color: black;
+    color: white;
+}

@@ -68,6 +68,27 @@
   margin-top: 7px;
   font-size: small;
 }
+.SignUpText{
+  cursor: pointer;
+}
+.modal_background_SignUp{
+  width: 60%;
+  text-align: left;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  padding-top: 20px;
+  border: 1px solid rgb(41, 40, 40);
+}
+.modal_background_SignUp:hover {
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
 .links-nav-upper-wrapper a {
   text-decoration: none;
   color: rgb(60, 59, 59);

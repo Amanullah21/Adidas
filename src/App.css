@@ -8,3 +8,20 @@ button{
   text-align: left;
 }
 
+.resuble_button{
+  width: 200px;
+  height: 40px ;
+  background-color:white;
+  color: black;
+  margin-left: 20px;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+
+}
+.resuble_button:hover{
+  background-color: rgb(27, 26, 26);
+  color: white;
+  border: 2px solid white;
+}

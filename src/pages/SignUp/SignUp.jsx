@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { isclose } from "../../redux/actions";
 import styled from "./SignUp.module.css";
 
 const init = {
-  email: "",
+  userName: "",
   password: "",
   agree: true,
 };
 
 const SignUp = () => {
-  const navigat = useNavigate()
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState(init);
 
@@ -18,6 +20,7 @@ const SignUp = () => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
   };
+  const dispatch = useDispatch()
   const url ="http://localhost:8080/users"
   const AddToServer = () => {
     fetch(url, {
@@ -26,7 +29,9 @@ const SignUp = () => {
       headers: {
         "content-type": "application/json",
       },
-    }).then ((res) => navigat("/"))
+    }).then ((res) => {navigate("/login")
+        dispatch(isclose())
+  })
   };
 
   return (
@@ -36,9 +41,9 @@ const SignUp = () => {
         <p>Sign up now and get 15% off your first order.</p>
         <input
           type="text"
-          placeholder="Email"
-          name="email"
-          value={data.email}
+          placeholder="Enter Username"
+          name="userName"
+          value={data.userName}
           onChange={dataHandle}
           className={styled.input}
         />

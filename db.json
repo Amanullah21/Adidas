@@ -1,48 +1,45 @@
 {
-  "todos": [
-    {
-      "title": "ptweb3 is awesome 1",
-      "userID": "ptweb3",
-      "isCompleted": true,
-      "id": 1
-    },
-    {
-      "title": "new task test",
-      "userID": "ptweb3",
-      "isCompleted": true,
-      "id": 2
-    },
-    {
-      "title": "new todo item by ptweb3-2",
-      "userID": "ptweb3-2",
-      "isCompleted": false,
-      "id": 3
-    },
-    {
-      "title": "Aman",
-      "userID": "ptweb3",
-      "isCompleted": true,
-      "id": 5
-    },
-    {
-      "title": "Aman",
-      "userID": "",
-      "isCompleted": true,
-      "id": 6
-    }
-  ],
+  "todos": [],
   "users": [
     {
-      "email": "amanullah_pw2_213@masai.school",
+      "userName": "Aman",
       "password": "Amanullah",
       "agree": true,
       "id": 1
+    }
+  ],
+  "buyer": [
+    {
+      "first_name": "Md",
+      "last_name": "Amanullah",
+      "address": "Shahpur Baghiun",
+      "additional_info": "4343",
+      "pincode": "534534",
+      "state": "Dadar and Nagar Haveli",
+      "city": "ere",
+      "landmark": "retert",
+      "email": "1amanpce@gmail.com",
+      "number": "07070476900",
+      "id": 1
+    }
+  ],
+  "cartProducts": [
+    {
+      "id": "11",
+      "url": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/93c9faaf6c7f40259550ae6f00df625a_9366/Blondey_Coach_Jacket_Silver_GS9265_01_laydown.jpg",
+      "price": "4000",
+      "title": "Jacket",
+      "gen": "male",
+      "cate": "cloth"
     },
     {
-      "email": "amanullah_pw2_213@masai.school",
-      "password": "Amanullah",
-      "agree": true,
-      "id": 2
+      "id": "4",
+      "url": "https://m.media-amazon.com/images/I/61hMQOHmEIL._UY695_.jpg",
+      "price": "2000",
+      "title": "Men's Bouncer-01",
+      "gen": "male",
+      "cate": "shoes",
+      "date": "11"
     }
   ],
   "product": [
@@ -52,15 +49,17 @@
       "price": "9000",
       "gen": "male",
       "cate": "shoes",
-      "title": "Formal Shoes"
+      "title": "shoes",
+      "date": "14"
     },
     {
       "id": "2",
       "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bed08740b59418eb8a0ad940138c943_9366/a.b.-gazelle-indoor-shoes.jpg",
-      "price": "2000",
+      "price": "8000",
       "title": "Gaale Indoor Shoes",
       "gen": "male",
-      "cate": "shoes"
+      "cate": "shoes",
+      "date": "1"
     },
     {
       "id": "3",
@@ -68,7 +67,8 @@
       "price": "2000",
       "title": "Running Shoes",
       "gen": "male",
-      "cate": "shoes"
+      "cate": "shoes",
+      "date": "02"
     },
     {
       "id": "4",
@@ -76,15 +76,17 @@
       "price": "2000",
       "title": "Men's Bouncer-01",
       "gen": "male",
-      "cate": "shoes"
+      "cate": "shoes",
+      "date": "11"
     },
     {
       "id": "5",
       "url": "https://m.media-amazon.com/images/I/71sSM7Y1gVL._UX695_.jpg",
-      "price": "1000$",
+      "price": "1000",
       "title": "Adidas Men's CRI Rise V2 Shoes",
       "gen": "male",
-      "cate": "shoes"
+      "cate": "shoes",
+      "date": "04"
     },
     {
       "id": "6",
@@ -92,7 +94,8 @@
       "price": "2000",
       "title": "Adidas Men's Beamers M Running Shoe",
       "gen": "male",
-      "cate": "shoes"
+      "cate": "shoes",
+      "date": "9"
     },
     {
       "id": "7",
@@ -128,11 +131,11 @@
     },
     {
       "id": "11",
-      "url": "",
+      "url": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/93c9faaf6c7f40259550ae6f00df625a_9366/Blondey_Coach_Jacket_Silver_GS9265_01_laydown.jpg",
       "price": "4000",
-      "title": "",
-      "gen": "female",
-      "cate": "shoes"
+      "title": "Jacket",
+      "gen": "male",
+      "cate": "cloth"
     },
     {
       "id": "12",
@@ -152,43 +155,43 @@
     },
     {
       "id": "14",
-      "url": "",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/33eedcac2f594fd09ba4ae8c01455f55_9366/classigy-m.jpg",
       "price": "4000",
-      "title": "",
+      "title": "Classiy",
       "gen": "female",
       "cate": "shoes"
     },
     {
       "id": "15",
-      "url": "",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/65642cf2bb6a4fef811aad520127e41f_9366/cooler-long-sleeve-sweatshirt.jpg",
       "price": "4000",
-      "title": "",
-      "gen": "female",
-      "cate": "shoes"
+      "title": "Fast Primeblue Tee",
+      "gen": "male",
+      "cate": "cloth"
     },
     {
-      "id": "1",
-      "url": "",
+      "id": "18",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/7eeb56d46e5d43b09e25ac8400c907bf_9366/fast-primeblue-tee.jpg",
       "price": "4000",
-      "title": "",
-      "gen": "female",
-      "cate": "shoes"
+      "title": "Cooler Long Sleeve ",
+      "gen": "male",
+      "cate": "cloth"
     },
     {
-      "id": "10",
-      "url": "",
+      "id": "16",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/3e56c91850d64e0dacf4ae57010fb02c_9366/own-the-run-tee.jpg",
       "price": "4000",
-      "title": "",
-      "gen": "female",
-      "cate": "shoes"
+      "title": "Own The Run Tee ",
+      "gen": "male",
+      "cate": "cloth"
     },
     {
-      "id": "10",
-      "url": "",
+      "id": "17",
+      "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a2adc8816a34eafb149abb500faee05_9366/Tokyo_Run_Jacket_White_GD5028_21_model.jpg",
       "price": "4000",
-      "title": "",
-      "gen": "female",
-      "cate": "shoes"
+      "title": "TOKYO RUN JACKET",
+      "gen": "male",
+      "cate": "cloth"
     }
   ]
 }

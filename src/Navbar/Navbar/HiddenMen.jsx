@@ -1,12 +1,15 @@
 import React from "react";
 import "./HiddenMen.css";
+import { Link } from "react-router-dom";
 function HiddenMen() {
   return (
     <div className="hidden-nav-container">
       <div>
         <ul>
           <li>
-            <div className="hidden-heading-nav">Featured</div>
+            <div className="hidden-heading-nav">
+              <Link to="/product">All Product</Link>
+            </div>
           </li>
           <li>New Arrivals</li>
           <li>Originals</li>
@@ -25,7 +28,9 @@ function HiddenMen() {
             <li>
               <div className="hidden-heading-nav">FOOTWEAR</div>
             </li>
-            <li>Running</li>
+            <Link to="/product">
+              <li>Shoes</li>
+            </Link>
             <li>Sneakers</li>
             <li>Originals</li>
             <li>Slides &amp; Sandals</li>

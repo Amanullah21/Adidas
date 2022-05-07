@@ -5,6 +5,7 @@ import { Routing } from "./Routing/Routing";
 // import Nav from "./Navbar/Nav";
 import Footer from "./Footer.jsx/Footer";
 import FinalNav from "./Navbar/Navbar/FinalNav";
+import Purchase from "./Order/Purchase/Purchase";
 
 function App() {
   const isLoggedIn = useSelector((store) => store.userDetails.isLoggedIn);
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <FinalNav/>
       <Routing/>
+      {/* <Purchase/> */}
       <Footer/>
     </div>
   );

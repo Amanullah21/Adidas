@@ -1,0 +1,43 @@
+.questions {
+  border: 1px black solid;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  font-weight: 300;
+  background-color: rgb(237, 237, 237);
+  padding: 0px 10px;
+}
+.arriving {
+  font-family: "adineue PRO Cyr Bold";
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+.standard {
+  display: flex;
+  /* gap: 10px;
+   */
+  font-family: "adineue PRO Cyr Bold";
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+.div {
+  margin: 10px 30%;
+  width: 675px;
+}
+.box {
+  border: 1px gray solid;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  box-sizing: border-box;
+}
+
+.box p {
+  padding: 0;
+  margin: 0;
+}
+.box p:last-child {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
