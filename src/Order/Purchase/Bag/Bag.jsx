@@ -10,22 +10,25 @@ const Bag = () => {
   const cartProducts = useSelector((store) => store.cartProducts);
   const [addItem, setAddItem] = useState(1);
   const [data,setData] = useState([])
-  const getTodo = () => {
-    fetch("http://localhost:8080/cartProducts")
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((error) => console.log(error));
-  };
+  // const getTodo = () => {
+  //   fetch("https://adidas-db.herokuapp.com/cartProducts")
+  //     .then((res) => res.json())
+  //     .then((res) => setData(res))
+  //     .catch((error) => console.log(error));
+  // };
 
-  useEffect(() => getTodo(), []);
-  const handleDelete = (id) => {
-    fetch(`http://localhost:8080/cartProducts/${id}`, {
-      method: "DELETE",
-      headers: {
-        "content-type": "application/json",
-      },
-    }).then(() => getTodo());
-  };
+  // useEffect(() => getTodo(), []);
+  // const handleDelete = (id) => {
+  //   fetch(`https://adidas-db.herokuapp.com/cartProducts/${id}`, {
+  //     method: "DELETE",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //   }).then(() => getTodo());
+  // };
+  const handleDelete =()=>{
+    console.log("aman")
+  }
 
   console.log(addItem);
   const dispatch = useDispatch();
@@ -40,7 +43,7 @@ const Bag = () => {
       </div>
       <div className={styled.bagCard_container}>
         <div className={styled.bagCard}>
-          {data.map((ele, index) => (
+          {cartProducts.map((ele, index) => (
             <div className={styled.card}>
               <div>
                 <img src={ele.url} alt={ele.title} />
@@ -74,7 +77,7 @@ const Bag = () => {
           <Link to="/purchase">
             <button
               className={styled.resuble_button}
-              disabled={data.length === 0}
+              disabled={cartProducts.length === 0}
             >
               Checkout
             </button>

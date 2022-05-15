@@ -7,23 +7,23 @@ import { Link } from "react-router-dom";
 const Complete = () => {
   const cartProducts = useSelector((store) => store.cartProducts);
   const [data, setData] = useState([]);
-  const url = "http://localhost:8080/buyer";
-  const [data1,setData1] = useState([])
-  const getTodo = () => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((error) => console.log(error));
-  };
-  useEffect(() => getTodo(), [])
-  const getTodo1 = () => {
-    fetch("http://localhost:8080/cartProducts")
-      .then((res) => res.json())
-      .then((res) => setData1(res))
-      .catch((error) => console.log(error));
-  };
+  const url = "https://adidas-db.herokuapp.com/buyer";
+  // const [data1,setData1] = useState([])
+  // const getTodo = () => {
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((res) => setData(res))
+  //     .catch((error) => console.log(error));
+  // };
+  // useEffect(() => getTodo(), [])
+  // const getTodo1 = () => {
+  //   fetch("https://adidas-db.herokuapp.com/cartProducts")
+  //     .then((res) => res.json())
+  //     .then((res) => setData1(res))
+  //     .catch((error) => console.log(error));
+  // };
 
-  useEffect(() => getTodo1(), []);
+  // useEffect(() => getTodo1(), []);
   return (
     <>
       <NavPur />
@@ -35,7 +35,7 @@ const Complete = () => {
       }}>Home</Link>
         <h1>YOUR ORDER WAS PLACED SUCCESSFULLY</h1>
         <p>Your Order no 456975</p>
-        {data1.map((ele) => (
+        {cartProducts.map((ele) => (
           <div className={styled.img_container}>
             <img
               style={{

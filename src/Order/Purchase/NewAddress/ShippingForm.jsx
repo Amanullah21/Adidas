@@ -25,7 +25,7 @@ import { } from "react-router-dom"
     });
   };
   const navigate = useNavigate();
-  const url ="http://localhost:8080/buyer"
+  const url ="https://adidas-db.herokuapp.com/buyer"
   function submitHandler(e) {
     e.preventDefault();
     console.log(shipping);

@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux";
 
 const Product = () => {
   const [product, setProduct] = useState([]);
-  let url = "http://localhost:8080/product";
+  let url = "https://adidas-db.herokuapp.com/product";
   const getTodo = () => {
     fetch(url)
       .then((res) => res.json())
@@ -25,7 +25,7 @@ const Product = () => {
   };
 
   const addtobag = (item) => {
-    fetch("http://localhost:8080/cartProducts", {
+    fetch("https://adidas-db.herokuapp.com/cartProducts", {
       method: "POST",
       body: JSON.stringify(item),
       headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -35,21 +35,21 @@ const Product = () => {
   };
 
   const sortedDataPriceLow = () => {
-    let url = "http://localhost:8080/product?_sort=price&_order=asc";
+    let url = "https://adidas-db.herokuapp.com/product?_sort=price&_order=asc";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
   const sortedDataNewest = () => {
-    let url = "http://localhost:8080/product?_sort=date&_order=asc";
+    let url = "https://adidas-db.herokuapp.com/product?_sort=date&_order=asc";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
   const sortedDataPriceHigh = () => {
-    let url = "http://localhost:8080/product?_sort=price&_order=desc";
+    let url = "https://adidas-db.herokuapp.com/product?_sort=price&_order=desc";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
@@ -58,7 +58,7 @@ const Product = () => {
 
   const shoescat = () => {
     console.log("check");
-    let url = "http://localhost:8080/product?cate=shoes";
+    let url = "https://adidas-db.herokuapp.com/product?cate=shoes";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
@@ -66,21 +66,21 @@ const Product = () => {
   };
 
   const clothcat = () => {
-    let url = "http://localhost:8080/product?cate=cloth";
+    let url = "https://adidas-db.herokuapp.com/product?cate=cloth";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
   const maleFilter = () => {
-    let url = "http://localhost:8080/product?gen=male";
+    let url = "https://adidas-db.herokuapp.com/product?gen=male";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
   const femaleFilter = () => {
-    let url = "http://localhost:8080/product?gen=female";
+    let url = "https://adidas-db.herokuapp.com/product?gen=female";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setProduct(res))

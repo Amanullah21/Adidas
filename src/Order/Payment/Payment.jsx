@@ -10,23 +10,16 @@ const Payment = () => {
   const [data1, setData1] = useState([]);
   const [radioBtn, setRadioBtn] = useState(false);
   const navigate = useNavigate();
-  const url = "http://localhost:8080/buyer";
-  const getTodo = () => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((error) => console.log(error));
-  };
 
-  useEffect(() => getTodo(), []);
-  const getTodo1 = () => {
-    fetch("http://localhost:8080/cartProducts")
-      .then((res) => res.json())
-      .then((res) => setData1(res))
-      .catch((error) => console.log(error));
-  };
-
-  useEffect(() => getTodo1(), []);
+  // const url = "https://adidas-db.herokuapp.com/buyer";
+  // const getTodo = () => {
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((res) => setData(res))
+  //     .catch((error) => console.log(error));
+  // };
+  // console.log(data)
+  // useEffect(() => getTodo(), []);
 
   const completdpage = () => {
     navigate("/complete");
@@ -92,7 +85,7 @@ const Payment = () => {
           </div>
           <input type="text" placeholder="Add Promo" />
           <hr />
-          {data1.map((ele, index) => (
+          {cartProducts.map((ele, index) => (
             <>
               <img
                 style={{
