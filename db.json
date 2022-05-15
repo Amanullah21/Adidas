@@ -1,23 +1,16 @@
 {
   "todos": [],
-  "users": [
-    {
-      "userName": "Aman",
-      "password": "Amanullah",
-      "agree": true,
-      "id": 1
-    }
-  ],
+  "users": [],
   "buyer": [
     {
       "first_name": "Md",
       "last_name": "Amanullah",
       "address": "Shahpur Baghiun",
-      "additional_info": "4343",
-      "pincode": "534534",
-      "state": "Dadar and Nagar Haveli",
-      "city": "ere",
-      "landmark": "retert",
+      "additional_info": "jdfjsdfsd",
+      "pincode": "848131",
+      "state": "Assam",
+      "city": "Samastipur",
+      "landmark": "esdbskdf",
       "email": "1amanpce@gmail.com",
       "number": "07070476900",
       "id": 1
@@ -25,21 +18,21 @@
   ],
   "cartProducts": [
     {
-      "id": "11",
-      "url": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/93c9faaf6c7f40259550ae6f00df625a_9366/Blondey_Coach_Jacket_Silver_GS9265_01_laydown.jpg",
+      "id": "9",
+      "url": "https://m.media-amazon.com/images/I/51ikE3xxw3L._UX695_.jpg",
       "price": "4000",
-      "title": "Jacket",
+      "title": "Road Runner",
       "gen": "male",
-      "cate": "cloth"
+      "cate": "shoes"
     },
     {
-      "id": "4",
-      "url": "https://m.media-amazon.com/images/I/61hMQOHmEIL._UY695_.jpg",
-      "price": "2000",
-      "title": "Men's Bouncer-01",
+      "id": "2",
+      "url": "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bed08740b59418eb8a0ad940138c943_9366/a.b.-gazelle-indoor-shoes.jpg",
+      "price": "8000",
+      "title": "Gaale Indoor Shoes",
       "gen": "male",
       "cate": "shoes",
-      "date": "11"
+      "date": "1"
     }
   ],
   "product": [

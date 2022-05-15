@@ -5,28 +5,23 @@ const SignlePage = () => {
   const { userId } = useParams();
   const [single, setSingle] = useState([]);
 
-  const url = `http://localhost:8080/product/${userId}`;
+  const url = `http://localhost:8080/book/${userId}`;
 
-  const getTodo = () => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((res) => setSingle(res))
-      .catch((error) => console.log(error));
-  };
-
-  useEffect(() => getTodo(), []);
+  fetch(url)
+    .then((res) => res.json())
+    .then((res) => setSingle(res))
+    .catch((error) => console.log(error));
 
   return (
     <div>
-        <h1>{single.title}</h1>
-        <img src={single.url} alt="" />
-      {/* {single.map((ele) => (
+      {single.map((ele, index) => (
         <div>
-          <h1>{ele.title}</h1>
-          <h2>{ele.price}</h2>
-          <img src={ele.url} alt={ele.title} />
+            <img src={ele.url} alt="" />
+            <h4>{ele.title}</h4>
+            <p>{ele.price} $</p>
+          {/* </Link> */}
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };
