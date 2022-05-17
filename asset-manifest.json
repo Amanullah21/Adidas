@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Adidas/static/css/main.4b7d96f4.css",
-    "main.js": "/Adidas/static/js/main.dc49c2df.js",
-    "static/js/787.a09012be.chunk.js": "/Adidas/static/js/787.a09012be.chunk.js",
-    "static/media/WomenHome.webp": "/Adidas/static/media/WomenHome.6c53fec40918fc6706b5.webp",
-    "static/media/HomeImg.webp": "/Adidas/static/media/HomeImg.4b2df8721e4581bdfef2.webp",
-    "static/media/KidsHome.webp": "/Adidas/static/media/KidsHome.a782fd7023578d55d62c.webp",
-    "static/media/MenHome.webp": "/Adidas/static/media/MenHome.20f4251a965ca02f5966.webp",
-    "static/media/adidas.png": "/Adidas/static/media/adidas.603125d96d0e9f5bbdaa.png",
-    "index.html": "/Adidas/index.html",
-    "main.4b7d96f4.css.map": "/Adidas/static/css/main.4b7d96f4.css.map",
-    "main.dc49c2df.js.map": "/Adidas/static/js/main.dc49c2df.js.map",
-    "787.a09012be.chunk.js.map": "/Adidas/static/js/787.a09012be.chunk.js.map"
+    "main.css": "/adidas/static/css/main.b86570c8.css",
+    "main.js": "/adidas/static/js/main.31cf6560.js",
+    "static/js/787.a09012be.chunk.js": "/adidas/static/js/787.a09012be.chunk.js",
+    "static/media/WomenHome.webp": "/adidas/static/media/WomenHome.6c53fec40918fc6706b5.webp",
+    "static/media/HomeImg.webp": "/adidas/static/media/HomeImg.4b2df8721e4581bdfef2.webp",
+    "static/media/KidsHome.webp": "/adidas/static/media/KidsHome.a782fd7023578d55d62c.webp",
+    "static/media/MenHome.webp": "/adidas/static/media/MenHome.20f4251a965ca02f5966.webp",
+    "static/media/adidas.png": "/adidas/static/media/adidas.603125d96d0e9f5bbdaa.png",
+    "index.html": "/adidas/index.html",
+    "main.b86570c8.css.map": "/adidas/static/css/main.b86570c8.css.map",
+    "main.31cf6560.js.map": "/adidas/static/js/main.31cf6560.js.map",
+    "787.a09012be.chunk.js.map": "/adidas/static/js/787.a09012be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b7d96f4.css",
-    "static/js/main.dc49c2df.js"
+    "static/css/main.b86570c8.css",
+    "static/js/main.31cf6560.js"
   ]
 }
