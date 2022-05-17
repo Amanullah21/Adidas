@@ -111,10 +111,14 @@ const Home = () => {
             </Link>
           </div>
           <div className={styled.who_are_div_women} onClick={womenhome}>
-            Women
+          <Link to="/women" style={{ color: "white" }}>
+              Women
+            </Link>
           </div>
           <div className={styled.who_are_div_kids} onClick={kidshome}>
-            Kids
+          <Link to="/kids" style={{ color: "white" }}>
+              Kids
+            </Link>
           </div>
         </div>
       </div>

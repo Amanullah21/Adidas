@@ -16,22 +16,22 @@ const Product = () => {
       .then((res) => setProduct(res))
       .catch((error) => console.log(error));
   };
-  const dispatch = useDispatch();
 
   useEffect(() => getTodo(), []);
 
-  const productCard = () => {
-    console.log("Product card of product page");
-  };
+
+  
+  const dispatch = useDispatch();
+
+ 
+
+  
 
   const addtobag = (item) => {
-    fetch("https://adidas-db.herokuapp.com/cartProducts", {
-      method: "POST",
-      body: JSON.stringify(item),
-      headers: { "Content-type": "application/json; charset=UTF-8" },
-    })
-      .then((response) => response.json())
-      .then((res) => dispatch(addingToBag(res)));
+    dispatch(addingToBag(item));
+  };
+  const productCard = () => {
+    console.log("Product card of product page");
   };
 
   const sortedDataPriceLow = () => {
@@ -94,7 +94,7 @@ const Product = () => {
       <div className={styled.product_filter}>
         <h2 style={{
           paddingLeft:"20px"
-        }}>Product</h2>
+        }}>All Product</h2>
         <button className={styled.filter} onClick={() => setFilterOpen(true)}>
           <span>Fliter & Sort</span>
           <img

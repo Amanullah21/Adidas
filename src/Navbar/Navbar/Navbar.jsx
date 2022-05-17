@@ -82,7 +82,7 @@ function NavbarCont() {
                 </div>
               </li>
               <li className="links-nav women">
-                <a href="#">
+                <Link to="/women">
                   <h5
                     style={{
                       fontWeight: "bold",
@@ -90,7 +90,7 @@ function NavbarCont() {
                   >
                     WOMEN
                   </h5>
-                </a>
+                </Link>
                 <div className="animation-nav"></div>
                 <div className="hidden-nav-drop-women">
                   <HiddenWomen />

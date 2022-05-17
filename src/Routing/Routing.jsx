@@ -13,6 +13,7 @@ import Bag from "../Order/Purchase/Bag/Bag";
 import Purchase from "../Order/Purchase/Purchase";
 import Payment from "../Order/Payment/Payment";
 import Complete from "../Order/Complete.jsx/Complete";
+import Kids from "../pages/Kids/Kids";
 
 export const Routing = () => {
   return (
@@ -22,6 +23,7 @@ export const Routing = () => {
         <Route path="/adidas" element={<Product />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/men" element={<Men />} />
+        <Route path="/kids" element={<Kids />} />
         <Route path="/women" element={<Women />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product" element={<Product />} />

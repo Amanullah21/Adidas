@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "./Payment.module.css";
 import NavPur from "../../Order/Purchase/NavPur/NavPur";
+import { removeAllToBag } from "../../redux/actions";
 
 const Payment = () => {
   const cartProducts = useSelector((store) => store.cartProducts);
@@ -11,18 +12,17 @@ const Payment = () => {
   const [radioBtn, setRadioBtn] = useState(false);
   const navigate = useNavigate();
 
-  // const url = "https://adidas-db.herokuapp.com/buyer";
-  // const getTodo = () => {
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then((res) => setData(res))
-  //     .catch((error) => console.log(error));
-  // };
-  // console.log(data)
-  // useEffect(() => getTodo(), []);
+  const dispatch = useDispatch();
 
-  const completdpage = () => {
+  
+  const completedpage = () => {
+    if(radioBtn == true){
+      setRadioBtn(false)
     navigate("/complete");
+    }else{
+      alert("Choose Option")
+    }
+    
   };
   return (
     <>
@@ -65,7 +65,7 @@ const Payment = () => {
           </h6>
           <button
             className="resuble_button"
-            onClick={completdpage}
+            onClick={completedpage}
             style={{
               height: "40px",
               width: "90%",
@@ -94,10 +94,19 @@ const Payment = () => {
                 src={ele.url}
                 alt=""
               />
-              <h5>{ele.title}</h5>
-              <span>1{ele.price}$</span>
-              <span>{ele.gen}</span>
-              <span>{ele.cate}</span>
+              <h5>{ele.title} </h5>
+              <span>1{ele.price}$, </span>
+              <span>{ele.gen}, </span>
+              <span>{ele.cate}, </span>
+              <br />
+              <hr style={
+                {
+                  color:"red",
+                  background:"grey",
+                  marginRight:"20px"
+                }
+              }/>
+              <br />
             </>
           ))}
           {data.map((ele) => (

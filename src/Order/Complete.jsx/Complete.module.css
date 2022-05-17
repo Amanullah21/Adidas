@@ -26,3 +26,17 @@
     background-color: black;
     color: white;
 }
+.cardEmpty{
+
+          height: 50px;
+          width: 200px;
+          color: white;
+          background-color: black;
+          margin-top: 20px;
+          margin-left: 20%;
+}
+.cardEmpty:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}

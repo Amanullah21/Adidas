@@ -5,9 +5,9 @@ import styled from "../Product/Product.module.css";
 import { addingToBag } from "../../redux/actions";
 import { useDispatch } from "react-redux";
 
-const Women = () => {
+const Kids = () => {
   const [product, setProduct] = useState([]);
-  let url = "https://adidas-db.herokuapp.com/product?gen=female";
+  let url = "https://adidas-db.herokuapp.com/product?gen=kid";
   const getTodo = () => {
     fetch(url)
       .then((res) => res.json())
@@ -23,7 +23,6 @@ const Women = () => {
   const dispatch = useDispatch();
 
   const addtobag = (item) => {
-    alert("Check Cart")
     dispatch(addingToBag(item));
   };
 
@@ -36,7 +35,7 @@ const Women = () => {
             paddingLeft: "20px",
           }}
         >
-          Women
+          Kids
         </h2>
       </div>
       <div className={styled.product_container}>
@@ -60,4 +59,4 @@ const Women = () => {
   );
 };
 
-export default Women;
+export default Kids;

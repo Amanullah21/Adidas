@@ -9,6 +9,8 @@ export const REMOVE_TO_BAG ="REMOVE_TO_BAG"
 export const SAVED_BAG = "SAVED_BAG";
 export const ISOPEN = "ISOPEN";
 export const ISCLOSE = "ISCLOSE";
+export const REMOVE_ALL_TO_BAG="REMOVE_ALL_TO_BAG"
+
 
 export const isopen = (payload) => ({
   type: ISOPEN,
@@ -27,6 +29,9 @@ export const savedBag = (payload) => ({
 export const addingToBag = (payload) => ({
   type: ADD_TO_BAG,
   payload,
+});
+export const removeAllToBag = () => ({
+  type: REMOVE_ALL_TO_BAG,
 });
 export const removeToBag = (payload) => ({
   type: REMOVE_TO_BAG,

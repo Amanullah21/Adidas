@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import NavPur from "../Purchase/NavPur/NavPur";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "./Complete.module.css";
 import { Link } from "react-router-dom";
+import { removeAllToBag } from "../../redux/actions";
 
 const Complete = () => {
   const cartProducts = useSelector((store) => store.cartProducts);
@@ -24,6 +25,10 @@ const Complete = () => {
   // };
 
   // useEffect(() => getTodo1(), []);
+  const dispatch = useDispatch();
+  const cardEmpty =()=>{
+    dispatch(removeAllToBag());
+  }
   return (
     <>
       <NavPur />
@@ -32,7 +37,8 @@ const Complete = () => {
         height:"20px",
         color:"black"
 
-      }}>Home</Link>
+      }}>
+        <h1 className={styled.cardEmpty} onClick={cardEmpty} >Home</h1></Link>
         <h1>YOUR ORDER WAS PLACED SUCCESSFULLY</h1>
         <p>Your Order no 456975</p>
         {cartProducts.map((ele) => (
