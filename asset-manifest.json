@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adidas/static/css/main.b86570c8.css",
-    "main.js": "/adidas/static/js/main.31cf6560.js",
+    "main.js": "/adidas/static/js/main.9e09d252.js",
     "static/js/787.a09012be.chunk.js": "/adidas/static/js/787.a09012be.chunk.js",
     "static/media/WomenHome.webp": "/adidas/static/media/WomenHome.6c53fec40918fc6706b5.webp",
     "static/media/HomeImg.webp": "/adidas/static/media/HomeImg.4b2df8721e4581bdfef2.webp",
@@ -10,11 +10,11 @@
     "static/media/adidas.png": "/adidas/static/media/adidas.603125d96d0e9f5bbdaa.png",
     "index.html": "/adidas/index.html",
     "main.b86570c8.css.map": "/adidas/static/css/main.b86570c8.css.map",
-    "main.31cf6560.js.map": "/adidas/static/js/main.31cf6560.js.map",
+    "main.9e09d252.js.map": "/adidas/static/js/main.9e09d252.js.map",
     "787.a09012be.chunk.js.map": "/adidas/static/js/787.a09012be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b86570c8.css",
-    "static/js/main.31cf6560.js"
+    "static/js/main.9e09d252.js"
   ]
 }
