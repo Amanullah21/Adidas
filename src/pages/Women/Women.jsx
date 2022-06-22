@@ -36,7 +36,7 @@ const Women = () => {
             paddingLeft: "20px",
           }}
         >
-          it is women page Women
+          it is Women <section></section>
         </h2>
       </div>
       <div className={styled.product_container}>
